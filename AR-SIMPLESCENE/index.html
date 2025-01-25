@@ -19,15 +19,15 @@
     <title>AR Workshop Scene</title>
   </head>
   <body style="margin: 0; overflow: hidden;">
-    <a-scene embedded arjs vr-mode-ui="enabled: false">
+    <a-scene embedded arjs vr-mode-ui="enabled: false" raycaster cursor="rayOrigin: mouse" renderer="antialias: true; alpha: true">
       <a-marker preset="hiro">
-        <a-box position="0 0.5 0" color="blue"></a-box>
+        <a-box position="0 0.5 0" color="#4CC3D9" rotation="0 45 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 5000"></a-box>
       </a-marker>
       <a-entity camera>
         position="0 0 0"
         scale="0.05 0.05 0.05"
         rotation="0 45 0"
-        gltf-model="https://github.com/grgGIT/IGME-480_GRG/blob/main/AR-SIMPLESCENE/ar.js"</a-entity>
+        gltf-model="https://github.com/grgGIT/IGME-480_GRG/blob/main/AR-SIMPLESCENE/assets/models/scene.gltf"</a-entity>
     </a-scene>
   </body>
 </html>
